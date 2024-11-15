@@ -585,6 +585,7 @@ require('lazy').setup({
         clangd = {},
         rust_analyzer = {},
         dockerls = {},
+        nginx_language_server = {},
         -- Some languages (like typescript) have entire language plugins that can be useful:
         --    https://github.com/pmizio/typescript-tools.nvim
         --
