@@ -581,6 +581,7 @@ require('lazy').setup({
       local servers = {
         -- See `:help lspconfig-all` for a list of all the pre-configured LSPs
         eslint = {},
+        biome = {},
         ts_ls = {},
         clangd = {},
         rust_analyzer = {},
