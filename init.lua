@@ -197,6 +197,12 @@ vim.keymap.set('n', '<C-l>', 'V', { desc = 'Highlight current line' })
 vim.keymap.set('n', '<A-k>', '<cmd>m-2<cr>==', { desc = 'Move current line up one line and re-indent' })
 vim.keymap.set('n', '<A-j>', '<cmd>m+1<cr>==', { desc = 'Move current line down one line and re-indent' })
 
+-- https://www.reddit.com/r/neovim/comments/1858n12/comment/kb0361f/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+vim.keymap.set('n', '<leader>yf', function()
+  local filepath = vim.fn.expand '%'
+  vim.fn.setreg('+', filepath)
+end, { noremap = true, silent = true, desc = 'Copy current file path to clipboard' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
